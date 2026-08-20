@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="Трутовик">
+  <g transform="translate(0,7)">
+    <path d="M10 66 C10 32 38 16 64 26 C84 34 92 50 88 60 C84 69 58 72 36 72 C20 72 10 70 10 66 Z" fill="#9CC63C"/>
+    <path d="M18 64 C19 41 40 28 62 34" stroke="#2E4A22" stroke-width="4.6" fill="none" stroke-linecap="round"/>
+    <path d="M24 68 C26 49 44 39 66 44" stroke="#2E4A22" stroke-width="3.6" fill="none" stroke-linecap="round" opacity=".55"/>
+  </g>
+</svg>
