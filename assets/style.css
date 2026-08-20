@@ -1,0 +1,103 @@
+/* Палитра взята из фирменных материалов: кремовый фон + зелёный лист */
+:root{
+  --cream:#F7F1E9; --white:#FFFFFF; --warm:#F1E9DC;
+  --green:#9CC63C; --green-d:#74A028; --forest:#2E4A22;
+  --ink:#23261F; --muted:#5F6357; --faint:#8E8B80; --line:#E4DCCF;
+  --brown:#5A3A18;
+  --h:'Montserrat',-apple-system,'Segoe UI',sans-serif;
+  --b:'Manrope',-apple-system,'Segoe UI',sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--cream);color:var(--ink);font-family:var(--b);font-size:18.5px;line-height:1.68;-webkit-font-smoothing:antialiased}
+.wrap{max-width:760px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:var(--h);font-weight:700;line-height:1.22;color:var(--forest)}
+h1{font-size:clamp(30px,5.6vw,44px);margin-bottom:16px}
+h2{font-size:clamp(23px,4vw,31px);margin:0 0 16px}
+h3{font-size:20px;margin-bottom:8px}
+p{margin-bottom:16px}p:last-child{margin-bottom:0}
+a{color:var(--green-d)}
+ul{margin:0 0 16px 22px}li{margin-bottom:9px}
+em{font-style:italic;color:var(--forest)}
+.lead{font-size:21px;line-height:1.55;color:#3A3E34}
+.muted{color:var(--muted)}.small{font-size:16.5px}
+
+/* ---- Kopf ---- */
+header.top{background:var(--white);border-bottom:3px solid var(--green);position:sticky;top:0;z-index:50}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:14px;padding-top:12px;padding-bottom:12px;flex-wrap:wrap}
+.brand{font-family:var(--h);font-weight:700;font-size:20px;color:var(--forest);text-decoration:none;letter-spacing:.3px;display:flex;align-items:center;gap:9px}
+.brand .leaf{width:22px;height:22px;background:var(--green);border-radius:50% 0 50% 50%;display:inline-block;flex:none}
+nav{display:flex;gap:5px;flex-wrap:wrap}
+nav a{font-family:var(--h);font-size:13.5px;font-weight:600;text-decoration:none;color:var(--muted);
+      padding:7px 11px;border-radius:20px;white-space:nowrap}
+nav a:hover{background:var(--warm);color:var(--forest)}
+nav a.on{background:var(--green);color:#1C2A10}
+
+/* ---- Hero ---- */
+.hero{background:linear-gradient(180deg,var(--white) 0%,var(--cream) 100%);padding:54px 0 46px;text-align:center;border-bottom:1px solid var(--line)}
+.hero .kick{font-family:var(--h);font-size:12.5px;letter-spacing:2.6px;text-transform:uppercase;color:var(--green-d);font-weight:700;margin-bottom:14px}
+.hero .lead{max-width:26em;margin:0 auto}
+.hero .small{max-width:30em;margin:16px auto 0}
+
+section{padding:50px 0}
+section+section{border-top:1px solid var(--line)}
+
+.cards{display:grid;gap:16px;margin-top:22px}
+.cards.two{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.card{background:var(--white);border:1px solid var(--line);border-radius:18px;padding:24px 26px}
+.card h3{color:var(--forest)}
+.card p{font-size:17px;color:var(--muted)}
+.card li{font-size:16.5px;color:var(--muted)}
+
+.soft{background:var(--white);border-left:4px solid var(--green);border-radius:0 16px 16px 0;padding:22px 26px;margin:22px 0}
+.soft .t{font-family:var(--h);font-size:12.5px;letter-spacing:1.8px;text-transform:uppercase;color:var(--green-d);font-weight:700;margin-bottom:9px}
+.soft.warn{border-left-color:var(--brown);background:#FBF6EF}
+.soft.warn .t{color:var(--brown)}
+
+table{width:100%;border-collapse:collapse;margin:18px 0;font-size:17px;background:var(--white);border-radius:14px;overflow:hidden}
+th{font-family:var(--h);font-size:12.5px;text-transform:uppercase;letter-spacing:1px;color:#1C2A10;text-align:left;padding:12px 14px;background:var(--green)}
+td{padding:13px 14px;border-bottom:1px solid var(--line);vertical-align:top;color:var(--muted)}
+td:first-child{color:var(--ink);font-weight:700}
+tr:last-child td{border-bottom:0}
+
+.btn{display:inline-block;background:var(--green);color:#1C2A10;font-family:var(--h);font-weight:700;font-size:16.5px;
+     text-decoration:none;padding:15px 30px;border-radius:12px;border:0;cursor:pointer;transition:.15s}
+.btn:hover{background:var(--green-d);color:#fff}
+.btn.ghost{background:transparent;color:var(--forest);border:2px solid var(--green)}
+.btn.ghost:hover{background:var(--warm);color:var(--forest)}
+.row{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
+
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin-top:24px}
+.tile{background:var(--white);border:1px solid var(--line);border-radius:18px;padding:22px;text-decoration:none;color:inherit;display:block;transition:.15s}
+.tile:hover{border-color:var(--green);transform:translateY(-2px)}
+.tile .n{font-family:var(--h);font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--green-d);font-weight:700;margin-bottom:7px}
+.tile h3{font-size:19px;margin-bottom:6px}
+.tile p{font-size:16px;color:var(--muted);margin:0}
+
+.quote{background:var(--white);border-left:4px solid var(--green);border-radius:0 14px 14px 0;padding:18px 22px;margin-bottom:13px}
+.quote p{font-size:18px;font-style:italic;color:#3A3E34;margin-bottom:7px}
+.quote .who{font-size:14.5px;color:var(--faint)}
+
+details{border-bottom:1px solid var(--line);padding:15px 0}
+summary{cursor:pointer;font-weight:700;font-size:18px;list-style:none;font-family:var(--h);color:var(--forest)}
+summary::-webkit-details-marker{display:none}
+summary::before{content:"+ ";color:var(--green-d)}
+details[open] summary::before{content:"– "}
+details p{margin-top:11px;font-size:17px;color:var(--muted)}
+
+.cta-band{background:var(--white);border:1px solid var(--line);border-radius:22px;padding:30px 28px;text-align:center;margin-top:8px}
+.field{width:100%;font-family:var(--b);font-size:17px;padding:15px 17px;border:1.5px solid #DDD4C4;border-radius:12px;margin-bottom:11px;background:#FEFDFB}
+.field:focus{outline:none;border-color:var(--green)}
+.hint{font-size:14px;color:var(--faint);margin-top:12px;line-height:1.5}
+
+footer{background:var(--white);border-top:3px solid var(--green);padding:34px 0 54px;font-size:14px;color:var(--faint);line-height:1.7}
+footer a{color:var(--muted)}
+footer .fnav{margin-bottom:14px}
+footer .fnav a{margin:0 9px;font-size:14px;text-decoration:none}
+
+@media(max-width:640px){
+  body{font-size:17.5px}
+  section{padding:40px 0}
+  nav a{font-size:12.5px;padding:6px 9px}
+  .btn{display:block;text-align:center;width:100%}
+}
