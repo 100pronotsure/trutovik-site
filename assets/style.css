@@ -95,9 +95,32 @@ footer a{color:var(--muted)}
 footer .fnav{margin-bottom:14px}
 footer .fnav a{margin:0 9px;font-size:14px;text-decoration:none}
 
+/* ---- Fachbeitrag ---- */
+.article{max-width:680px}
+.byline{font-family:var(--h);font-size:13.5px;color:var(--faint);letter-spacing:.4px;margin-bottom:8px}
+.byline b{color:var(--forest)}
+.article h2{margin-top:38px}
+.article p{font-size:19px;line-height:1.72}
+.article .intro{font-size:21.5px;line-height:1.6;color:#33372C}
+.article .intro::first-letter{float:left;font-family:var(--h);font-weight:700;font-size:62px;
+  line-height:.82;color:var(--green-d);margin:6px 12px 0 0}
+.pull{border-left:4px solid var(--green);padding:6px 0 6px 22px;margin:28px 0;
+  font-family:var(--h);font-size:22px;line-height:1.4;color:var(--forest);font-weight:600}
+.article ol{margin:0 0 16px 22px}
+.article ol li{margin-bottom:9px}
+.refs{font-size:15px;line-height:1.55;color:var(--muted);margin-left:20px}
+.refs li{margin-bottom:7px}
+.tldr{background:var(--white);border:1px solid var(--line);border-radius:16px;padding:22px 26px;margin:24px 0}
+.tldr .t{font-family:var(--h);font-size:12.5px;letter-spacing:1.8px;text-transform:uppercase;color:var(--green-d);font-weight:700;margin-bottom:10px}
+.tldr ul{margin-bottom:0}
+.tldr li{font-size:17px;color:var(--muted)}
+
 @media(max-width:640px){
   body{font-size:17.5px}
   section{padding:40px 0}
   nav a{font-size:12.5px;padding:6px 9px}
   .btn{display:block;text-align:center;width:100%}
+  .article p{font-size:18px}
+  .article .intro{font-size:19.5px}
+  .pull{font-size:19px}
 }
